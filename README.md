@@ -5,13 +5,14 @@ La Programación Orientada a Objetos (POO) nos ayuda a analizar y entender todos
 
 Este paradigma se compone de 4 elementos (que analizaremos a fondo más adelante):
 
-Clases
-Propiedades
-Métodos
-Objetos
+- Clases
+- Propiedades
+- Métodos
+- Objetos
+
 Además, se basa en los siguientes 4 pilares:
 
-Encapsulamiento
-Abstracción
-Herencia
-Polimorfismo
+- Encapsulamiento
+- Abstracción
+- Herencia
+- Polimorfismo
