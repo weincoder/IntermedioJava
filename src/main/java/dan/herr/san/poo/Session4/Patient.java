@@ -1,4 +1,4 @@
-package dan.herr.san.poo.Session3;
+package dan.herr.san.poo.Session4;
 
 public class Patient {
     int id;
