@@ -51,7 +51,11 @@ public class User {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        if (phoneNumber.length() != 8) {
+            System.out.println("el numero debe ser igual a 8 digitos");
+        } else  {
+            this.phoneNumber = phoneNumber;
+        }
     }
 
 

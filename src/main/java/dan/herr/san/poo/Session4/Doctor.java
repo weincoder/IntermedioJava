@@ -4,37 +4,18 @@ import java.util.ArrayList;
 import java.util.Date;
 
 //Clases
-public class Doctor {
+public class Doctor extends User {
     //Atributos
     //creando variable estatica
-    private static int id;
+/*
+     private int id;
     private String name;
     private String email;
+    private String address;
+    private String phoneNumber;
+     */
+
     private String speciality;
-
-    public static int getId() {
-        return id;
-    }
-
-    public static void setId(int id) {
-        Doctor.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getSpeciality() {
         return speciality;
@@ -44,24 +25,17 @@ public class Doctor {
         this.speciality = speciality;
     }
 
-    //método cargado por defautl
-    Doctor () {
-        this.name = "name por default";
-        this.speciality = "speciality default";
-    }
-
 
     /**
      * Método constructor de paciente
      * @param name
-     * @param speciality
+     * @param email
      */
-    Doctor(String name, String speciality) {
-        id ++;
+    Doctor(String name, String email) {
+        super(name,email);
         System.out.println(
                 String.format("Yo %s me he graduado de medicina estoy listo para atender pacientes",
                         name));
-        this.name =name;
         this.speciality =speciality;
 
     }
@@ -69,7 +43,7 @@ public class Doctor {
     public void showName() {
         System.out.println(
                 String.format(
-                        "Muy buenos días, soy el Doctor %s scuenteme que lo trae por acá", name));
+                        "Muy buenos días, soy el Doctor %s scuenteme que lo trae por acá", super.getName()));
     }
 
 
@@ -90,14 +64,10 @@ public class Doctor {
         return availableAppointments;
 
     }
-
-
-
     /**
      * En esta clase se define la estructura que deben tener las citas agendas
      */
     public  static  class AvailableAppointment{
-        private int id;
         private Date date;
         private  String time;
 
@@ -109,14 +79,6 @@ public class Doctor {
         public AvailableAppointment(Date date, String time) {
             this.date = date;
             this.time = time;
-        }
-
-        public int getId() {
-            return id;
-        }
-
-        public void setId(int id) {
-            this.id = id;
         }
 
         public Date getDate() {
