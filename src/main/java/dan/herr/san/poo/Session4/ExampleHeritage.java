@@ -12,10 +12,14 @@ public class ExampleHeritage {
 
 
         //instanciar el objeto
-        newDoctor = new Doctor("Daniel Herrera", "Neurologo");
+        newDoctor = new Doctor("Daniel Herrera", "NeurologoDan@salud.com");
+        newDoctor.setSpeciality("Neurólogo");
 
         Patient newPatient = new Patient("Maria Fernanda","mafer@gmail.com");
         newPatient.setWeight(50.3);
+        newPatient.setHeight(1.56);
+        newPatient.setBirthday("26/2/1994");
+        newPatient.setBlood("O+");
         //Cuando abstraemos en setters and getters podemos hacer encapsulamiento
         //de las variables y hasta tener control sobre ellas
         newPatient.setPhoneNumber("123456789");
@@ -39,6 +43,10 @@ public class ExampleHeritage {
              ) {
             System.out.println(element.getDate() + " " + element.getTime());
         }
+
+        //en este caso se muestra la salida de sobre-escribir el método toString
+        System.out.println(newPatient);
+        System.out.println(newDoctor);
 
     }
 }

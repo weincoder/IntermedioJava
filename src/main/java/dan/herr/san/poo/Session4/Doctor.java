@@ -7,13 +7,6 @@ import java.util.Date;
 public class Doctor extends User {
     //Atributos
     //creando variable estatica
-/*
-     private int id;
-    private String name;
-    private String email;
-    private String address;
-    private String phoneNumber;
-     */
 
     private String speciality;
 
@@ -96,5 +89,12 @@ public class Doctor extends User {
         public void setTime(String time) {
             this.time = time;
         }
+    }
+
+    @Override
+    public String toString() {
+
+        return  "el nombre del usuario es : "+super.getName() + "\nsu email : " + super.getEmail()
+        +"\nEs un usuario tipo doctor y su especialidad es : "+ this.speciality;
     }
 }

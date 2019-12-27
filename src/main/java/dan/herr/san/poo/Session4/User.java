@@ -58,5 +58,8 @@ public class User {
         }
     }
 
+/*
+    En este punto podemos ver como estamo sobre escribiendo el método toString
+ */
 
 }
