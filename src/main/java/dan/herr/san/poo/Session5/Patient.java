@@ -1,4 +1,4 @@
-package dan.herr.san.poo.Session4;
+package dan.herr.san.poo.Session5;
 
 public class Patient extends User {
 

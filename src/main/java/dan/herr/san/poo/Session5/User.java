@@ -1,6 +1,4 @@
-package dan.herr.san.poo.Session4;
-
-import java.util.Date;
+package dan.herr.san.poo.Session5;
 
 public class User {
     private int id;

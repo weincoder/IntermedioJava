@@ -1,4 +1,4 @@
-package dan.herr.san.poo.Session4;
+package dan.herr.san.poo.Session5;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -24,7 +24,7 @@ public class Doctor extends User {
      * @param name
      * @param email
      */
-    Doctor(String name, String email) {
+    public Doctor(String name, String email) {
         super(name,email);
         System.out.println(
                 String.format("Yo %s me he graduado de medicina estoy listo para atender pacientes",
