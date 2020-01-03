@@ -1,6 +1,6 @@
-package dan.herr.san.poo.Session7;
+package dan.herr.san.poo.Session7.model;
 
-public class Nurse extends User {
+public class Nurse extends User{
 
     private String speciality;
 
@@ -10,9 +10,9 @@ public class Nurse extends User {
 
     @Override
     public void showDataUser() {
-        System.out.println("es una enfermera de la facultad de la Universidad La Alegria de Vivir");
+        System.out.println("Empleado del Hospital: Cruz Verde");
+        System.out.println("Departamentos: Nutriología, Pediatría");
     }
-
 
 
     public String getSpeciality() {

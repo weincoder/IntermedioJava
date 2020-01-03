@@ -1,4 +1,4 @@
-package dan.herr.san.poo.Session7;
+package dan.herr.san.poo.Session7.model;
 
 import java.util.Date;
 

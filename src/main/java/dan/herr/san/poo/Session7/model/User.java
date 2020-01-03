@@ -1,6 +1,4 @@
-package dan.herr.san.poo.Session7;
-
-
+package dan.herr.san.poo.Session7.model;
 
 public abstract class User {
     private int id;

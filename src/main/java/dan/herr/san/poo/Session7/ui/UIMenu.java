@@ -1,7 +1,8 @@
 package dan.herr.san.poo.Session7.ui;
-import java.util.Scanner;
-import dan.herr.san.poo.Session7.Doctor;
-import dan.herr.san.poo.Session7.Patient;
+
+import dan.herr.san.poo.Session7.model.Doctor;
+
+import dan.herr.san.poo.Session7.model.Patient;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -81,6 +82,7 @@ public class UIMenu {
                         emailCorrect = true;
                         patinetLogged = p;
                         //showPatientMenu
+
                     }
                 }
             }

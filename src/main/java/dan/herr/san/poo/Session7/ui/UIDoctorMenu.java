@@ -1,8 +1,6 @@
 package dan.herr.san.poo.Session7.ui;
 
-
-
-import dan.herr.san.poo.Session7.Doctor;
+import dan.herr.san.poo.Session7.model.Doctor;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -92,7 +90,7 @@ public class UIDoctorMenu {
 
     private static void checkDoctorAvailableAppointments(Doctor doctor){
         if (doctor.getAvailableAppointments().size() > 0
-                && !doctorsAvailableAppointments.contains(doctor)){
+            && !doctorsAvailableAppointments.contains(doctor)){
             doctorsAvailableAppointments.add(doctor);
         }
     }
