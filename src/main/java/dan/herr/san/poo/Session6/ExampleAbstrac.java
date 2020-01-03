@@ -56,5 +56,14 @@ public class ExampleAbstrac {
         //obtendremos diferentes comportamientos
         user.showUserInfo();
         userOther.showUserInfo();
+
+        //Clases anonimas
+        User usuarioAnonimo = new User("dan","dan@d.com") {
+            @Override
+            public void showUserInfo() {
+                System.out.println("soy una clase anónima solo me emplearé en este momento");
+            }
+        };
+        usuarioAnonimo.showUserInfo();
     }
 }
